@@ -11,8 +11,10 @@ include 'menu.php';
 
 <?php
 include 'parkir_input.php';
-include 'parkir_read.php';
+// include 'parkir_read.php';
 ?>
 
+<script src="jquery.min.js"></script>
+<script src="parkir.js"></script>
 </body>
 </html>

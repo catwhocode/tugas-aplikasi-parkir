@@ -1,8 +1,19 @@
+<?php 
+include_once 'koneksi.php';
+
+$sql = "SELECT * FROM Kendaraan";
+$result = $conn->query($sql);
+?>
 <form method="post" action="parkir_create.php">
     <table>
         <tr>
             <td>Tanggal Parkir</td>
             <td><input type="date" name="TglParkir"></td>
+        </tr>
+
+        <tr>
+            <td>Kendaraan</td>
+            <td><input id="keyword"><input type="hidden" name="IDKendaraan" id="IDKendaraan"></td>
         </tr>
 
         <tr>
@@ -21,3 +32,5 @@
         </tr>
     </table>
 </form>
+
+<div id="informasi"></div>
